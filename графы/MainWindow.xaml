@@ -1,0 +1,15 @@
+﻿<Window x:Class="графы.MainWindow" x:Name="wind"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:графы"
+        mc:Ignorable="d"
+        Title="Grafs" Height="720" Width="1218" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Canvas x:Name="hub" Background="White" MouseLeftButtonDown="t">
+        <Button Content="Подсказка" ToolTip="левая кнопка мыши - поставить вершину; правая кновка - ребро (сначало по одной вершине затем по второй); нажимайте кнопку 'Эйреров цикл' пока ребра не станут снова чёрнами" Height="34" Width="68" />
+        <TextBlock x:Name="outPut" Background="LightGray" Canvas.Left="1080" Text="" TextWrapping="Wrap" Height="230" Width="120"/>
+        <Button Content="Эйлеров цикл" Canvas.Left="1080" Canvas.Top="200" Height="30" Width="120" PreviewMouseDown="Button_PreviewMouseDown"/>
+        <Button x:Name="J" Content="Мат. смежности" Canvas.Left="1080" Canvas.Top="170" Height="30" Width="120" PreviewMouseDown="Button_MouseDown"/>
+    </Canvas>
+</Window>
